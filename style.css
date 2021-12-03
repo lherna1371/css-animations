@@ -1,0 +1,40 @@
+button:hover {
+    transform: rotate(20deg);
+}
+
+
+div {
+    transition: font-size 10s;
+}
+
+div:hover {
+    font-size: 50px;
+}
+
+/* transition: property duration timing-function delay|initial|inherit; */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function */
+
+input[type=text] {
+    width: 100px;
+    transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+width: 250px;
+}
+
+/* animation */
+
+.animation-div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: heythere 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes heythere {
+    from {left: 0px;}
+    to {left: 200px;}
+}
